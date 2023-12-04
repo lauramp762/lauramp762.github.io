@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Monstyle.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#recettes">Recettes</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="main">
+            <p>Some text some text some text some text..</p>
+
+
+            <div class="titre">Les recettes sucrées</div>
+            
+            <img src="images/logo2.jpg" alt="logo" style="opacity: 0.7;width: 25%"/>
+        </div>  
+   
+    <table style="border: 1px dotted black; width: 100%">
+
+<ul id="myUL">
+    <li><span class="caret">Biscuits</span>
+        <ul class="nested">
+            <li>Au chocolat</li>
+            <li>Sans gluten</li>
+            <li>Célébrations</li>
+            <li>Autres</li>
+        </ul>
+    </li>
+    <li><span class="caret">Gâteaux</span>
+         <ul class="nested">
+            <li>Au chocolat</li>
+            <li>Sans gluten</li>
+            <li>Célébrations</li>
+            <li>Autres</li>
+        </ul>
+    </li>
+    <li><span class="caret">Crèmes</span>
+         <ul class="nested">
+            <li>Au chocolat</li>
+            <li>A la vanille</li>
+            <li>Autres</li>
+        </ul>
+    </li>
+    <li>Autres</li>
+</ul> 
+</table>
+<script>
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+</script>
+ </body>
+</html>
